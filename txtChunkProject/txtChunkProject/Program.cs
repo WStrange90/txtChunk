@@ -9,8 +9,8 @@ namespace txtChunkProject
         {
             printBanner();
 
-            Console.Write("How many lines would you like the broken down files to be? ");
-            string lengthInput = Console.ReadLine();
+            Console.Write("How many lines would you like the new files to be? ");
+            string lengthInput = Console.ReadLine().Trim();
 
             int desiredFileLength;
             try
@@ -31,8 +31,8 @@ namespace txtChunkProject
                 throw;
             }
 
-            string newDocPath = "../../../Output";
-            string dropZone = @"../../../DropZone";
+            string newDocPath = "../../../Output"; //Debug Value: "../../../Output"
+            string dropZone = "../../../DropZone"; //Debug Value: "../../../DropZone"
             string[] dropZoneFiles = Directory.GetFiles(dropZone, "*.txt");
             foreach (var file in dropZoneFiles)
             {
@@ -40,7 +40,7 @@ namespace txtChunkProject
 
                 if (desiredFileLength > fileContents.Length)
                 {
-                    Console.WriteLine("The file is not large enough to support the length you entered.");
+                    Console.WriteLine("The file '" + Path.GetFileName(file) + "' is not large enough to support the length you entered.");
                     Console.WriteLine("Press enter to exit.");
                     Environment.Exit(0);
                 }
@@ -67,9 +67,15 @@ namespace txtChunkProject
                     }
                 }
                 //END While
+
+                Console.WriteLine();
+                Console.WriteLine("The file '" + Path.GetFileName(file) + "' has been divided into smaller files and those can be found in the Output folder.");
             }
             //END foreach file
-            
+
+            Console.WriteLine();
+            Console.WriteLine("All files from the DropZone folder have been proccessed. Press enter to exit the program.");
+            Console.ReadLine();
         }
 
         public static void printBanner()
