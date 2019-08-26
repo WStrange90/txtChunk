@@ -1,0 +1,6 @@
+C:\Users\William\source\repos\txtChunkNew\txtChunkNew\obj\Debug\txtChunkNew.csproj.CoreCompileInputs.cache
+C:\Users\William\source\repos\txtChunkNew\txtChunkNew\bin\Debug\txtChunkNew.exe.config
+C:\Users\William\source\repos\txtChunkNew\txtChunkNew\bin\Debug\txtChunkNew.exe
+C:\Users\William\source\repos\txtChunkNew\txtChunkNew\bin\Debug\txtChunkNew.pdb
+C:\Users\William\source\repos\txtChunkNew\txtChunkNew\obj\Debug\txtChunkNew.exe
+C:\Users\William\source\repos\txtChunkNew\txtChunkNew\obj\Debug\txtChunkNew.pdb
