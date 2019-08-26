@@ -31,8 +31,8 @@ namespace txtChunkProject
                 throw;
             }
 
-            string newDocPath = "../../../Output"; //Debug Value: "../../../Output"
-            string dropZone = "../../../DropZone"; //Debug Value: "../../../DropZone"
+            string newDocPath = "Output"; //Debug Value: "../../../Output"
+            string dropZone = "DropZone"; //Debug Value: "../../../DropZone"
             string[] dropZoneFiles = Directory.GetFiles(dropZone, "*.txt");
             foreach (var file in dropZoneFiles)
             {
