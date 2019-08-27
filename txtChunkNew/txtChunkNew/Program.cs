@@ -11,6 +11,24 @@ namespace txtChunkNew
 
             Console.Write("How many lines would you like the new files to be? ");
             string lengthInput = Console.ReadLine().Trim();
+            Console.WriteLine();
+
+            Console.Write("Would you like to replace tabs with another character? (Y/N): ");
+            string tabInput = Console.ReadLine().Trim().ToUpper();
+            bool tabChoice;
+            string newCharacter = "";
+
+            if (tabInput.Equals("Y"))
+            {
+                Console.WriteLine("You have chosen to replace tabs. What character would you like to use?");
+                newCharacter = Console.ReadLine().Trim();
+                tabChoice = true;
+            }
+            else
+            {
+                tabChoice = false;
+            }
+            
 
             int desiredFileLength;
             try
@@ -31,8 +49,8 @@ namespace txtChunkNew
                 throw;
             }
 
-            string newDocPath = "../Output"; //Debug Value: "../../../Output"
-            string dropZone = "../DropZone"; //Debug Value: "../../../DropZone"
+            string newDocPath = "Output"; //Debug Value: "../../../Output"
+            string dropZone = "DropZone"; //Debug Value: "../../../DropZone"
             string[] dropZoneFiles = Directory.GetFiles(dropZone, "*.txt");
             foreach (var file in dropZoneFiles)
             {
@@ -54,6 +72,12 @@ namespace txtChunkNew
                     {
                         for (int i = 0; i < desiredFileLength; i++)
                         {
+
+                            if (tabChoice)
+                            {
+                                fileContents[currentFileLine] = fileContents[currentFileLine].Replace("\t", newCharacter);
+                            }
+
                             outputFile.WriteLine(fileContents[currentFileLine]);
                             currentFileLine++;
 

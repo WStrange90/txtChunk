@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_25CE765DC752E1DA4C16B02A6F156BFA"
+        "MsmKey" = "8:_775C5511223E0CC8470CA8E72F5F77F6"
         "OwnerKey" = "8:_860FAC708D9C4942B59B148F5BF938B5"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -34,13 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_25CE765DC752E1DA4C16B02A6F156BFA"
+        "OwnerKey" = "8:_860FAC708D9C4942B59B148F5BF938B5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_860FAC708D9C4942B59B148F5BF938B5"
+        "OwnerKey" = "8:_775C5511223E0CC8470CA8E72F5F77F6"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -61,6 +61,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -77,6 +93,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:2"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -106,14 +138,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_25CE765DC752E1DA4C16B02A6F156BFA"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_775C5511223E0CC8470CA8E72F5F77F6"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+            "AssemblyAsmDisplayName" = "8:System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
                 "ScatterAssemblies"
                 {
-                    "_25CE765DC752E1DA4C16B02A6F156BFA"
+                    "_775C5511223E0CC8470CA8E72F5F77F6"
                     {
                     "Name" = "8:System.Net.Http.dll"
                     "Attributes" = "3:512"
@@ -122,7 +154,7 @@
             "SourcePath" = "8:System.Net.Http.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_07FE4A50BE26409FB46B0ABAC9C78952"
+            "Folder" = "8:_E816172D9CAF46C596D58F4A0A94B283"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -139,10 +171,10 @@
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A2A35D01A254462DA04002F44C15E9AE"
             {
-            "SourcePath" = "8:H:\\User Docs\\Downloads\\txtChunkIcon.ico"
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Downloads\\txtChunkIcon.ico"
             "TargetName" = "8:txtChunkIcon.ico"
             "Tag" = "8:"
-            "Folder" = "8:_07FE4A50BE26409FB46B0ABAC9C78952"
+            "Folder" = "8:_E816172D9CAF46C596D58F4A0A94B283"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -183,62 +215,40 @@
             "Property" = "8:DesktopFolder"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_A89C7118A4D54D3EAE3659ABE9946DFC"
-                    {
-                    "Name" = "8:txt Chunk"
-                    "AlwaysCreate" = "11:TRUE"
-                    "Condition" = "8:"
-                    "Transitive" = "11:FALSE"
-                    "Property" = "8:_304B12AD51F149B59321359674DEA56B"
-                        "Folders"
-                        {
-                            "{9EF0B969-E518-4E46-987F-47570745A589}:_07FE4A50BE26409FB46B0ABAC9C78952"
-                            {
-                            "Name" = "8:ProgramFiles"
-                            "AlwaysCreate" = "11:FALSE"
-                            "Condition" = "8:"
-                            "Transitive" = "11:FALSE"
-                            "Property" = "8:_8DB0C83596494FB6A7A8B95F3DCD1284"
-                                "Folders"
-                                {
-                                }
-                            }
-                            "{9EF0B969-E518-4E46-987F-47570745A589}:_19482C952A064F2A8E5F4FBFF478526F"
-                            {
-                            "Name" = "8:DropZone"
-                            "AlwaysCreate" = "11:TRUE"
-                            "Condition" = "8:"
-                            "Transitive" = "11:FALSE"
-                            "Property" = "8:_372D7863C09A4F7FA3E792E502ABD7A4"
-                                "Folders"
-                                {
-                                }
-                            }
-                            "{9EF0B969-E518-4E46-987F-47570745A589}:_3823AD00C76045AA9723460C09ABC97A"
-                            {
-                            "Name" = "8:Output"
-                            "AlwaysCreate" = "11:TRUE"
-                            "Condition" = "8:"
-                            "Transitive" = "11:FALSE"
-                            "Property" = "8:_0E04589C880F42669247D04345B36BCD"
-                                "Folders"
-                                {
-                                }
-                            }
-                        }
-                    }
                 }
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_E816172D9CAF46C596D58F4A0A94B283"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
-            "AlwaysCreate" = "11:FALSE"
+            "AlwaysCreate" = "11:TRUE"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_12221A0A32D747B5BD40B67F6EA61D8D"
+                    {
+                    "Name" = "8:DropZone"
+                    "AlwaysCreate" = "11:TRUE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_372D7863C09A4F7FA3E792E502ABD7A4"
+                        "Folders"
+                        {
+                        }
+                    }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_EB065FD18CFB45F99372B6C7B9E31258"
+                    {
+                    "Name" = "8:Output"
+                    "AlwaysCreate" = "11:TRUE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_0E04589C880F42669247D04345B36BCD"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
         }
@@ -256,9 +266,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:txtChunkSetup"
+        "ProductName" = "8:txtChunk"
         "ProductCode" = "8:{F178B708-3F7F-4143-9223-3FD8408EBB82}"
-        "PackageCode" = "8:{3E11E4A8-F682-46CD-B57D-FF75B2C81904}"
+        "PackageCode" = "8:{89161FAB-8448-4F5F-BE69-64B0868F6748}"
         "UpgradeCode" = "8:{417B5B91-67CC-4E93-8878-F2EB73AE9756}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -266,12 +276,12 @@
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:wstrange"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
         "Title" = "8:txtChunkSetup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:wstrange"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
@@ -378,17 +388,17 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_0F55B08082FD478DA31BDA9D50DD483F"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A69342BD09C54DB18C77FD19FB161F17"
             {
-            "Name" = "8:txtChunk"
+            "Name" = "8:Shortcut to txtChunk Files"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_860FAC708D9C4942B59B148F5BF938B5"
-            "Folder" = "8:_A89C7118A4D54D3EAE3659ABE9946DFC"
-            "WorkingFolder" = "8:_07FE4A50BE26409FB46B0ABAC9C78952"
+            "Target" = "8:_E816172D9CAF46C596D58F4A0A94B283"
+            "Folder" = "8:_E016B4D23383420D9CCBB6C1D75F3498"
+            "WorkingFolder" = "8:_E816172D9CAF46C596D58F4A0A94B283"
             "Icon" = "8:_A2A35D01A254462DA04002F44C15E9AE"
             "Feature" = "8:"
             }
@@ -793,10 +803,10 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_860FAC708D9C4942B59B148F5BF938B5"
             {
-            "SourcePath" = "8:..\\txtChunkNew\\obj\\Debug\\txtChunkNew.exe"
+            "SourcePath" = "8:..\\txtChunkNew\\obj\\Debug\\txtChunk.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_07FE4A50BE26409FB46B0ABAC9C78952"
+            "Folder" = "8:_E816172D9CAF46C596D58F4A0A94B283"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
