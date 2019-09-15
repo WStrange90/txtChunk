@@ -60,6 +60,7 @@ namespace txtChunkNew
                 {
                     Console.WriteLine("The file '" + Path.GetFileName(file) + "' is not large enough to support the length you entered.");
                     Console.WriteLine("Press enter to exit.");
+                    Console.ReadLine();
                     Environment.Exit(0);
                 }
 
