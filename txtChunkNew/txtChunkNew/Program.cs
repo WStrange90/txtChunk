@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace txtChunkNew
 {
@@ -8,6 +9,7 @@ namespace txtChunkNew
         static void Main(string[] args)
         {
             printBanner();
+            //populateTestFile();
 
             Console.Write("How many lines would you like the new files to be? ");
             string lengthInput = Console.ReadLine().Trim();
@@ -28,7 +30,18 @@ namespace txtChunkNew
             {
                 tabChoice = false;
             }
-            
+
+            Console.WriteLine("Do the files have a header? (Y/N)");
+            Console.WriteLine("Note: All input files must either have a header or none of them may have a header!");
+            Console.WriteLine("      Otherwise the output will be incorrect!");
+            string headerChoice = Console.ReadLine().Trim().ToUpper();
+            bool headerExists = false;
+
+            if (headerChoice.Equals("Y"))
+            {
+                headerExists = true;
+            }
+
 
             int desiredFileLength;
             try
@@ -49,20 +62,30 @@ namespace txtChunkNew
                 throw;
             }
 
-            string newDocPath = "Output"; //Debug Value: "../../../Output"
-            string dropZone = "DropZone"; //Debug Value: "../../../DropZone"
+            string newDocPath = "Output"; //Prod Value
+            string dropZone = "DropZone"; //Prod Value
+            //string newDocPath = "../../../Output"; //Debug Value
+            //string dropZone = "../../../DropZone"; //Debug Value
+
             string[] dropZoneFiles = Directory.GetFiles(dropZone, "*.txt");
             foreach (var file in dropZoneFiles)
             {
                 string[] fileContents = System.IO.File.ReadAllLines(file);
 
-                if (desiredFileLength > fileContents.Length)
+                string currentFileHeader = "";
+
+                if (headerExists)
                 {
-                    Console.WriteLine("The file '" + Path.GetFileName(file) + "' is not large enough to support the length you entered.");
-                    Console.WriteLine("Press enter to exit.");
-                    Console.ReadLine();
-                    Environment.Exit(0);
+                    currentFileHeader = fileContents[0];
                 }
+
+                //if (desiredFileLength > fileContents.Length)
+                //{
+                //    Console.WriteLine("The file '" + Path.GetFileName(file) + "' is not large enough to support the length you entered.");
+                //    Console.WriteLine("Press enter to exit.");
+                //    Console.ReadLine();
+                //    Environment.Exit(0);
+                //}
 
                 int currentFileLine = 0;
                 int NumOfFilesMade = 0;
@@ -73,10 +96,37 @@ namespace txtChunkNew
                     {
                         for (int i = 0; i < desiredFileLength; i++)
                         {
+                            //If the files being processed have headers, write the header at the beggining of every new output file
+                            if (headerExists && i == 0 && currentFileLine == 0)
+                            {
+                                outputFile.WriteLine(currentFileHeader);
+                                currentFileLine++;
+                                if (currentFileLine == fileContents.Length)
+                                {
+                                    break;
+                                }
+                                continue;
+                            }
+                            else if (headerExists && i == 0)
+                            {
+                                outputFile.WriteLine(currentFileHeader);
+                            }
 
+                            //Change delimiter from tabs to pipes
                             if (tabChoice)
                             {
                                 fileContents[currentFileLine] = fileContents[currentFileLine].Replace("\t", newCharacter);
+
+                                //Removes blank lines from the output if they consist of only delimiters
+                                if (Regex.Matches(fileContents[currentFileLine], @"[a-zA-Z\d]").Count == 0)
+                                {
+                                    currentFileLine++;
+                                    if (currentFileLine == fileContents.Length)
+                                    {
+                                        break;
+                                    }
+                                    continue;
+                                }
                             }
 
                             outputFile.WriteLine(fileContents[currentFileLine]);
@@ -94,7 +144,7 @@ namespace txtChunkNew
                 //END While
 
                 Console.WriteLine();
-                Console.WriteLine("The file '" + Path.GetFileName(file) + "' has been divided into smaller files and those can be found in the Output folder.");
+                Console.WriteLine("The file '" + Path.GetFileName(file) + "' has been proccessed and it can be found in the Output folder.");
             }
             //END foreach file
 
@@ -113,6 +163,18 @@ namespace txtChunkNew
             Console.WriteLine("  |   |  |   _   |  |   |    |     |_ |   _   ||       || | |   ||    _  |");
             Console.WriteLine("  |___|  |__| |__|  |___|    |_______||__| |__||_______||_|  |__||___| |_|");
             Console.WriteLine();
+        }
+
+        public static void populateTestFile()
+        {
+            using (StreamWriter testFile = new StreamWriter(@"C:\Users\wstrange\Desktop\txtChunk AVX\testTxtChunkFile.txt"))
+            {
+                for (int i = 1; i <= 6000; i++)
+                {
+                    testFile.WriteLine("\t" + i + "\t");
+                }
+            }
+
         }
     }
     

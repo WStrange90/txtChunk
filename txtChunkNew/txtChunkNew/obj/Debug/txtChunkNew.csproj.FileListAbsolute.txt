@@ -11,3 +11,10 @@ H:\User Docs\My Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtC
 H:\User Docs\My Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtChunk.exe
 H:\User Docs\My Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtChunk.pdb
 H:\User Docs\My Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtChunkNew.csprojAssemblyReference.cache
+C:\Users\wstrange\Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\bin\Debug\txtChunk.exe.config
+C:\Users\wstrange\Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\bin\Debug\txtChunk.exe
+C:\Users\wstrange\Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\bin\Debug\txtChunk.pdb
+C:\Users\wstrange\Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtChunkNew.csprojAssemblyReference.cache
+C:\Users\wstrange\Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtChunkNew.csproj.CoreCompileInputs.cache
+C:\Users\wstrange\Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtChunk.exe
+C:\Users\wstrange\Documents\GitHub\txtChunk\txtChunkNew\txtChunkNew\obj\Debug\txtChunk.pdb
