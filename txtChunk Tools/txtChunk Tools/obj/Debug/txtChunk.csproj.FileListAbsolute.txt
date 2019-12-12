@@ -1,0 +1,10 @@
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\bin\Debug\txtChunk.exe.config
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\bin\Debug\txtChunk.exe
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\bin\Debug\txtChunk.pdb
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\obj\Debug\txtChunk.Form1.resources
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\obj\Debug\txtChunk.formFileSplitter.resources
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\obj\Debug\txtChunk.Properties.Resources.resources
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\obj\Debug\txtChunk.csproj.GenerateResource.cache
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\obj\Debug\txtChunk.csproj.CoreCompileInputs.cache
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\obj\Debug\txtChunk.exe
+C:\Users\wstrange\source\repos\txtChunk Tools\txtChunk Tools\obj\Debug\txtChunk.pdb

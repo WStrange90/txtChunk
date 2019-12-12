@@ -1,0 +1,11 @@
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\bin\Debug\Model N Tools.exe.config
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\bin\Debug\Model N Tools.exe
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\bin\Debug\Model N Tools.pdb
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model N Tools.csprojAssemblyReference.cache
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model_N_Tools.Form1.resources
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model_N_Tools.Properties.Resources.resources
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model N Tools.csproj.GenerateResource.cache
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model N Tools.csproj.CoreCompileInputs.cache
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model N Tools.exe
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model N Tools.pdb
+C:\Users\wstrange\source\repos\Model N Tools\Model N Tools\obj\Debug\Model_N_Tools.formFileSplitter.resources
