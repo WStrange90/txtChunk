@@ -13,6 +13,7 @@ namespace txtChunk
     public partial class Form1 : Form
     {
         formFileSplitter fileSplitForm = new formFileSplitter();
+        formExcelToTabDelim excelToTabDelimForm = new formExcelToTabDelim();
 
         public Form1()
         {
@@ -37,5 +38,9 @@ namespace txtChunk
             }
         }
 
+        private void btnExcelTabDelimited_Click(object sender, EventArgs e)
+        {
+            excelToTabDelimForm.Show();
+        }
     }
 }
