@@ -48,9 +48,10 @@
             // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(276, 311);
+            this.btnQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuit.Location = new System.Drawing.Point(461, 160);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(75, 23);
+            this.btnQuit.Size = new System.Drawing.Size(111, 23);
             this.btnQuit.TabIndex = 0;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
@@ -58,7 +59,7 @@
             // 
             // lineOptionInput
             // 
-            this.lineOptionInput.Location = new System.Drawing.Point(396, 32);
+            this.lineOptionInput.Location = new System.Drawing.Point(296, 12);
             this.lineOptionInput.Name = "lineOptionInput";
             this.lineOptionInput.Size = new System.Drawing.Size(130, 20);
             this.lineOptionInput.TabIndex = 1;
@@ -68,7 +69,7 @@
             // 
             // txtbxOldDelim
             // 
-            this.txtbxOldDelim.Location = new System.Drawing.Point(425, 74);
+            this.txtbxOldDelim.Location = new System.Drawing.Point(188, 56);
             this.txtbxOldDelim.Name = "txtbxOldDelim";
             this.txtbxOldDelim.Size = new System.Drawing.Size(24, 20);
             this.txtbxOldDelim.TabIndex = 4;
@@ -80,7 +81,7 @@
             this.chkbxFileSplit.AutoSize = true;
             this.chkbxFileSplit.Checked = true;
             this.chkbxFileSplit.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxFileSplit.Location = new System.Drawing.Point(78, 34);
+            this.chkbxFileSplit.Location = new System.Drawing.Point(12, 16);
             this.chkbxFileSplit.Name = "chkbxFileSplit";
             this.chkbxFileSplit.Size = new System.Drawing.Size(278, 17);
             this.chkbxFileSplit.TabIndex = 6;
@@ -93,7 +94,7 @@
             this.chkbxDelimiter.AutoSize = true;
             this.chkbxDelimiter.Checked = true;
             this.chkbxDelimiter.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxDelimiter.Location = new System.Drawing.Point(78, 77);
+            this.chkbxDelimiter.Location = new System.Drawing.Point(12, 59);
             this.chkbxDelimiter.Name = "chkbxDelimiter";
             this.chkbxDelimiter.Size = new System.Drawing.Size(118, 17);
             this.chkbxDelimiter.TabIndex = 7;
@@ -104,7 +105,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(393, 81);
+            this.label1.Location = new System.Drawing.Point(156, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(26, 13);
             this.label1.TabIndex = 8;
@@ -113,7 +114,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(464, 81);
+            this.label2.Location = new System.Drawing.Point(227, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 9;
@@ -121,7 +122,7 @@
             // 
             // txtbxNewDelim
             // 
-            this.txtbxNewDelim.Location = new System.Drawing.Point(502, 74);
+            this.txtbxNewDelim.Location = new System.Drawing.Point(265, 56);
             this.txtbxNewDelim.Name = "txtbxNewDelim";
             this.txtbxNewDelim.Size = new System.Drawing.Size(24, 20);
             this.txtbxNewDelim.TabIndex = 10;
@@ -133,7 +134,7 @@
             this.chkbxFileHeaders.AutoSize = true;
             this.chkbxFileHeaders.Checked = true;
             this.chkbxFileHeaders.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkbxFileHeaders.Location = new System.Drawing.Point(78, 117);
+            this.chkbxFileHeaders.Location = new System.Drawing.Point(12, 99);
             this.chkbxFileHeaders.Name = "chkbxFileHeaders";
             this.chkbxFileHeaders.Size = new System.Drawing.Size(302, 17);
             this.chkbxFileHeaders.TabIndex = 11;
@@ -142,9 +143,10 @@
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(276, 269);
+            this.btnRun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRun.Location = new System.Drawing.Point(461, 12);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(75, 23);
+            this.btnRun.Size = new System.Drawing.Size(111, 23);
             this.btnRun.TabIndex = 12;
             this.btnRun.Text = "Run";
             this.btnRun.UseVisualStyleBackColor = true;
@@ -152,9 +154,10 @@
             // 
             // btnOpenInput
             // 
-            this.btnOpenInput.Location = new System.Drawing.Point(201, 226);
+            this.btnOpenInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenInput.Location = new System.Drawing.Point(461, 71);
             this.btnOpenInput.Name = "btnOpenInput";
-            this.btnOpenInput.Size = new System.Drawing.Size(97, 23);
+            this.btnOpenInput.Size = new System.Drawing.Size(111, 23);
             this.btnOpenInput.TabIndex = 13;
             this.btnOpenInput.Text = "Open Input folder";
             this.btnOpenInput.UseVisualStyleBackColor = true;
@@ -162,7 +165,8 @@
             // 
             // btnOpenOutput
             // 
-            this.btnOpenOutput.Location = new System.Drawing.Point(327, 226);
+            this.btnOpenOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenOutput.Location = new System.Drawing.Point(461, 100);
             this.btnOpenOutput.Name = "btnOpenOutput";
             this.btnOpenOutput.Size = new System.Drawing.Size(111, 23);
             this.btnOpenOutput.TabIndex = 14;
@@ -180,7 +184,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::txtChunk.Properties.Resources.infoIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(192, 76);
+            this.pictureBox1.Location = new System.Drawing.Point(126, 58);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(19, 18);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -192,7 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 358);
+            this.ClientSize = new System.Drawing.Size(584, 261);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnOpenOutput);
             this.Controls.Add(this.btnOpenInput);
@@ -206,6 +210,7 @@
             this.Controls.Add(this.txtbxOldDelim);
             this.Controls.Add(this.lineOptionInput);
             this.Controls.Add(this.btnQuit);
+            this.MinimumSize = new System.Drawing.Size(600, 300);
             this.Name = "formFileSplitter";
             this.Text = "File Splitter";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

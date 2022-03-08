@@ -128,6 +128,10 @@ namespace txtChunk
 
         }//END method saveAsDelimited
 
+        private void formExcelToTabDelim_Load(object sender, EventArgs e)
+        {
+
+        }
     }// END formExcelToTabDelim
 
 }//END namespace txtChunk

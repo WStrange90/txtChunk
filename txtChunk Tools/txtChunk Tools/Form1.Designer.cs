@@ -35,8 +35,9 @@
             // 
             // btnFileSplitter
             // 
+            this.btnFileSplitter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFileSplitter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnFileSplitter.Location = new System.Drawing.Point(96, 95);
+            this.btnFileSplitter.Location = new System.Drawing.Point(96, 45);
             this.btnFileSplitter.Name = "btnFileSplitter";
             this.btnFileSplitter.Size = new System.Drawing.Size(135, 23);
             this.btnFileSplitter.TabIndex = 0;
@@ -46,8 +47,9 @@
             // 
             // btnQuit
             // 
+            this.btnQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnQuit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnQuit.Location = new System.Drawing.Point(126, 280);
+            this.btnQuit.Location = new System.Drawing.Point(126, 233);
             this.btnQuit.Name = "btnQuit";
             this.btnQuit.Size = new System.Drawing.Size(75, 23);
             this.btnQuit.TabIndex = 1;
@@ -57,8 +59,9 @@
             // 
             // btnExcelTabDelimited
             // 
+            this.btnExcelTabDelimited.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExcelTabDelimited.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnExcelTabDelimited.Location = new System.Drawing.Point(96, 124);
+            this.btnExcelTabDelimited.Location = new System.Drawing.Point(96, 74);
             this.btnExcelTabDelimited.Name = "btnExcelTabDelimited";
             this.btnExcelTabDelimited.Size = new System.Drawing.Size(135, 23);
             this.btnExcelTabDelimited.TabIndex = 2;
@@ -69,10 +72,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(326, 390);
+            this.ClientSize = new System.Drawing.Size(334, 311);
             this.Controls.Add(this.btnExcelTabDelimited);
             this.Controls.Add(this.btnQuit);
             this.Controls.Add(this.btnFileSplitter);
+            this.MinimumSize = new System.Drawing.Size(350, 350);
             this.Name = "Form1";
             this.Text = "txtChunk Tools Main";
             this.ResumeLayout(false);

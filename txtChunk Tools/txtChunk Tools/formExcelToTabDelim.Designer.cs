@@ -38,16 +38,16 @@
             // 
             // endOfLineIdent
             // 
-            this.endOfLineIdent.Location = new System.Drawing.Point(297, 54);
+            this.endOfLineIdent.Location = new System.Drawing.Point(254, 12);
             this.endOfLineIdent.Name = "endOfLineIdent";
-            this.endOfLineIdent.Size = new System.Drawing.Size(100, 20);
+            this.endOfLineIdent.Size = new System.Drawing.Size(77, 20);
             this.endOfLineIdent.TabIndex = 26;
             this.endOfLineIdent.Text = "EOL**";
             // 
             // endOfLineCheckbox
             // 
             this.endOfLineCheckbox.AutoSize = true;
-            this.endOfLineCheckbox.Location = new System.Drawing.Point(55, 57);
+            this.endOfLineCheckbox.Location = new System.Drawing.Point(12, 18);
             this.endOfLineCheckbox.Name = "endOfLineCheckbox";
             this.endOfLineCheckbox.Size = new System.Drawing.Size(236, 17);
             this.endOfLineCheckbox.TabIndex = 25;
@@ -56,7 +56,8 @@
             // 
             // btnOpenOutput
             // 
-            this.btnOpenOutput.Location = new System.Drawing.Point(230, 227);
+            this.btnOpenOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenOutput.Location = new System.Drawing.Point(361, 105);
             this.btnOpenOutput.Name = "btnOpenOutput";
             this.btnOpenOutput.Size = new System.Drawing.Size(111, 23);
             this.btnOpenOutput.TabIndex = 24;
@@ -66,9 +67,10 @@
             // 
             // btnOpenInput
             // 
-            this.btnOpenInput.Location = new System.Drawing.Point(104, 227);
+            this.btnOpenInput.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenInput.Location = new System.Drawing.Point(361, 76);
             this.btnOpenInput.Name = "btnOpenInput";
-            this.btnOpenInput.Size = new System.Drawing.Size(97, 23);
+            this.btnOpenInput.Size = new System.Drawing.Size(111, 23);
             this.btnOpenInput.TabIndex = 23;
             this.btnOpenInput.Text = "Open Input folder";
             this.btnOpenInput.UseVisualStyleBackColor = true;
@@ -76,9 +78,10 @@
             // 
             // btnRun
             // 
-            this.btnRun.Location = new System.Drawing.Point(179, 270);
+            this.btnRun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRun.Location = new System.Drawing.Point(361, 12);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(75, 23);
+            this.btnRun.Size = new System.Drawing.Size(111, 23);
             this.btnRun.TabIndex = 22;
             this.btnRun.Text = "Run";
             this.btnRun.UseVisualStyleBackColor = true;
@@ -86,9 +89,10 @@
             // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(179, 312);
+            this.btnQuit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuit.Location = new System.Drawing.Point(361, 166);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(75, 23);
+            this.btnQuit.Size = new System.Drawing.Size(111, 23);
             this.btnQuit.TabIndex = 21;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
@@ -98,15 +102,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 406);
+            this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.endOfLineIdent);
             this.Controls.Add(this.endOfLineCheckbox);
             this.Controls.Add(this.btnOpenOutput);
             this.Controls.Add(this.btnOpenInput);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.btnQuit);
+            this.MinimumSize = new System.Drawing.Size(500, 300);
             this.Name = "formExcelToTabDelim";
-            this.Text = "formExcelToTabDelim";
+            this.Text = "Excel To Tab Delimited Text File";
+            this.Load += new System.EventHandler(this.formExcelToTabDelim_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
