@@ -92,8 +92,6 @@
             // chkbxDelimiter
             // 
             this.chkbxDelimiter.AutoSize = true;
-            this.chkbxDelimiter.Checked = true;
-            this.chkbxDelimiter.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkbxDelimiter.Location = new System.Drawing.Point(12, 59);
             this.chkbxDelimiter.Name = "chkbxDelimiter";
             this.chkbxDelimiter.Size = new System.Drawing.Size(118, 17);
@@ -132,8 +130,6 @@
             // chkbxFileHeaders
             // 
             this.chkbxFileHeaders.AutoSize = true;
-            this.chkbxFileHeaders.Checked = true;
-            this.chkbxFileHeaders.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkbxFileHeaders.Location = new System.Drawing.Point(12, 99);
             this.chkbxFileHeaders.Name = "chkbxFileHeaders";
             this.chkbxFileHeaders.Size = new System.Drawing.Size(302, 17);
